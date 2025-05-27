@@ -1,0 +1,11 @@
+[project]
+name = "reinhard-color-transfer"
+version = "0.1.0"
+description = "An implementation of Color transfer between images by E. Reinhard et. al."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=2.2.6",
+    "opencv-python>=4.11.0.86",
+    "pillow>=11.2.1",
+]
