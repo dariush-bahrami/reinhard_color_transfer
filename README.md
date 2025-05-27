@@ -1,6 +1,6 @@
 ## Reinhard Color Transfer 
 
-This repository is an implementation of ["Color transfer between images" by E. Reinhard et. al."](https://doi.org/10.1109/38.946629)
+An implementation of ["Color transfer between images" by E. Reinhard et. al."](https://doi.org/10.1109/38.946629)
 
 ## Usage
 
@@ -16,4 +16,4 @@ result_image: Image.Image = transfer_color(source_image, color_image, alpha)
 
 Following is a visualization of result using sample images:
 
-![Color Transfer Visualization](./assets/Color-Transfer-Visualization.jpg)
+![Color Transfer Visualization](https://raw.githubusercontent.com/dariush-bahrami/reinhard_color_transfer/refs/heads/master/assets/Color-Transfer-Visualization.jpg)
