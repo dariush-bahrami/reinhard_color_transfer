@@ -1,6 +1,6 @@
 [project]
 name = "reinhard-color-transfer"
-version = "0.1.0"
+version = "0.1.2"
 description = "An implementation of Color transfer between images by E. Reinhard et. al."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -9,3 +9,10 @@ dependencies = [
     "opencv-python>=4.11.0.86",
     "pillow>=11.2.1",
 ]
+
+[tool.setuptools]
+py-modules = []
+
+[project.urls]
+"Homepage" = "https://github.com/dariush-bahrami/reinhard_color_transfer"
+"Bug Tracker" = "https://github.com/dariush-bahrami/reinhard_color_transfer/issues"
