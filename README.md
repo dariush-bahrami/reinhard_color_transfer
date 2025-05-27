@@ -1,6 +1,16 @@
 ## Reinhard Color Transfer 
+[![PyPI version](https://badge.fury.io/py/reinhard-color-transfer.svg)](https://badge.fury.io/py/reinhard-color-transfer)
 
 An implementation of ["Color transfer between images" by E. Reinhard et. al."](https://doi.org/10.1109/38.946629)
+
+## Installation
+
+You can install the package using `pip`:
+
+```bash
+pip install reinhard-color-transfer
+```
+
 
 ## Usage
 
