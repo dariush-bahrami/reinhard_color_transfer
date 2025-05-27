@@ -28,12 +28,15 @@ def transfer_color(
     Reference:
         doi: 10.1109/38.946629
     """
+    # convert to numpy
     source_image = np.asarray(source_image.convert("RGB"))
     color_image = np.asarray(color_image.convert("RGB"))
 
+    # Change color space to LAB
     src_lab = cv2.cvtColor(source_image, cv2.COLOR_RGB2LAB)
     clr_lab = cv2.cvtColor(color_image, cv2.COLOR_RGB2LAB)
 
+    # Compute color transfer variables
     mu_src = np.mean(src_lab, axis=(0, 1))
     sigma_src = np.std(src_lab, axis=(0, 1))
     mu_clr = np.mean(clr_lab, axis=(0, 1))
@@ -41,7 +44,12 @@ def transfer_color(
     mu_exp = alpha * mu_clr + (1 - alpha) * mu_src
     sigma_exp = alpha * sigma_clr + (1 - alpha) * sigma_src
 
+    # Do color transfer
     result_lab = ((src_lab - mu_src) / sigma_src) * sigma_exp + mu_exp
     result_lab = np.clip(result_lab, 0, 255).astype(np.uint8)
     result_rgb = cv2.cvtColor(result_lab, cv2.COLOR_LAB2RGB)
+
+    # Convert back to PIL Image
+    result_rgb = Image.fromarray(result_rgb)
+
     return result_rgb
