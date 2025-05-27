@@ -1,6 +1,6 @@
 ## Reinhard Color Transfer 
 
-This repository is an implementation of ["Color transfer between images" by E. Reinhard et. al.](https://doi.org/10.1109/38.946629)
+This repository is an implementation of ["Color transfer between images" by E. Reinhard et. al."](https://doi.org/10.1109/38.946629)
 
 ## Usage
 
