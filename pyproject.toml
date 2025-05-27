@@ -1,6 +1,6 @@
 [project]
 name = "reinhard-color-transfer"
-version = "0.1.2"
+version = "0.1.3"
 description = "An implementation of Color transfer between images by E. Reinhard et. al."
 readme = "README.md"
 requires-python = ">=3.11"
