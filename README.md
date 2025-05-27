@@ -16,7 +16,7 @@ pip install reinhard-color-transfer
 
 ```python
 from PIL import Image
-from colortransfer import transfer_color
+from reinhard_color_transfer import transfer_color
 
 source_image = Image.open("path/to/source/image")
 color_image = Image.open("path/to/color/image")
